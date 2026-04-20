@@ -197,7 +197,7 @@ export const PROJECTS = [
       ],
       gallery: [
         'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/sgez97sc_5th.png',
-        'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/wecip74w_image.png',
+        'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/qr0l9ter_hero%20section.png',
       ],
       takeaway:
         'The system matched characters. Users communicated meaning. Closing that gap \u2014 with chips, progressive disclosure, and honest empty states \u2014 turned search from a barrier into a conversation.',
@@ -327,7 +327,9 @@ export const PROJECTS = [
       ],
       gallery: [
         'https://image.thum.io/get/width/1600/https://phntechnology.com/programs',
-        'https://image.thum.io/get/width/1600/https://phntechnology.com/',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/masterclass',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/internship/business-analytics',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/summer-internship/offline',
         'https://image.thum.io/get/width/1600/https://phntechnology.com/advisoryboard',
         'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/certificate',
       ],
@@ -392,7 +394,9 @@ export const PROJECTS = [
       gallery: [
         'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/',
         'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/courses',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/courses/3/details',
         'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/about',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/login',
         'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/contact',
       ],
       takeaway:

@@ -20,7 +20,7 @@ export const HERO = {
   fullName: 'Bhavitha Naramamidi',
   description:
     'I craft intuitive, accessible, and user-centered digital experiences — blending thoughtful UX research with refined UI craft to solve real-world problems that feel effortless to use.',
-  image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80',
+  image: 'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/qf1dmx6s_PHN03096.JPG',
 };
 
 export const CONTACT = {
@@ -35,7 +35,7 @@ export const CONTACT = {
 };
 
 export const ABOUT = {
-  portrait: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900&q=80',
+  portrait: 'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/qf1dmx6s_PHN03096.JPG',
   bio: "I'm passionate about designing products that are both beautiful and genuinely useful. As a UI/UX designer — promoted to Head of Design at ADM Education & Society Welfare NGO within two months — I thrive on user research, wireframing, and turning complex problems into simple, delightful experiences. Always exploring new patterns, iterating with feedback, and learning something new.",
 };
 

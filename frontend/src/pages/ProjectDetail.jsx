@@ -102,7 +102,7 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-      {/* By the Numbers */}
+      {/* By the Numbers (for UX case studies) */}
       {(d.beforeMetrics || d.afterMetrics) && (
         <section className="pb-20">
           <div className="ds-container">
@@ -148,13 +148,41 @@ const ProjectDetail = () => {
         </section>
       )}
 
+      {/* Highlights (for website projects) */}
+      {d.highlights && d.highlights.length > 0 && (
+        <section className="pb-20">
+          <div className="ds-container">
+            <div className="ds-mono text-xs text-[var(--ds-accent)] mb-4">// Design Highlights</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+              {d.highlights.map((h, i) => (
+                <div key={i} className="p-7 rounded-2xl border border-[var(--ds-border)] bg-[var(--ds-surface)] hover:border-[var(--ds-accent)]/50 transition-colors">
+                  <div className="ds-heading text-4xl text-[var(--ds-accent)] leading-none">{h.value}</div>
+                  <div className="mt-4 text-[14px] text-white/80 leading-relaxed">{h.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Content sections */}
       <section className="pb-20">
         <div className="ds-container grid grid-cols-12 gap-12">
           <aside className="col-span-12 lg:col-span-3">
             <div className="sticky top-28 space-y-3 ds-mono text-xs text-[var(--ds-muted)]">
               <div className="text-[var(--ds-accent)]">// On this page</div>
-              {['Overview', 'By the Numbers', 'Your Role', 'Flows', 'Tech Stack', 'Key Features', 'Challenges', 'Takeaways'].map((s) => (
+              {[
+                'Overview',
+                (d.beforeMetrics || d.afterMetrics) && 'By the Numbers',
+                d.highlights && 'Highlights',
+                'Your Role',
+                d.flows && d.flows.length > 0 && 'Flows',
+                'Tech Stack',
+                d.gallery && d.gallery.length > 0 && (d.gallery.length > 2 ? 'Pages & Screens' : 'Selected Screens'),
+                'Key Features',
+                'Challenges',
+                'Takeaways',
+              ].filter(Boolean).map((s) => (
                 <div key={s} className="text-white/70 hover:text-[var(--ds-accent)] transition-colors cursor-pointer">
                   {s}
                 </div>
@@ -221,12 +249,23 @@ const ProjectDetail = () => {
             </div>
 
             {/* Gallery images */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {d.gallery.map((g, i) => (
-                <div key={i} className="relative overflow-hidden rounded-xl border border-[var(--ds-border)] aspect-[4/3]">
-                  <img src={g} alt={`gallery ${i}`} className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.04]" />
-                </div>
-              ))}
+            <div>
+              <SectionHeading>{d.gallery && d.gallery.length > 2 ? 'Pages & Screens' : 'Selected Screens'}</SectionHeading>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {d.gallery.map((g, i) => (
+                  <div key={i} className="group relative overflow-hidden rounded-xl border border-[var(--ds-border)] aspect-[4/3] bg-[var(--ds-surface)]">
+                    <img
+                      src={g}
+                      alt={`${project.title} screen ${i + 1}`}
+                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+                      loading="lazy"
+                    />
+                    <div className="absolute bottom-3 left-3 ds-mono text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-sm text-white/80">
+                      {String(i + 1).padStart(2, '0')} / {String(d.gallery.length).padStart(2, '0')}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div>

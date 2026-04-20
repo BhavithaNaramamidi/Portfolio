@@ -198,7 +198,6 @@ export const PROJECTS = [
       gallery: [
         'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/sgez97sc_5th.png',
         'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/wecip74w_image.png',
-        'https://mir-s3-cdn-cf.behance.net/projects/404/3bcb4c247859085.Y3JvcCwxMzA5LDEwMjQsNjQsMA.png',
       ],
       takeaway:
         'The system matched characters. Users communicated meaning. Closing that gap \u2014 with chips, progressive disclosure, and honest empty states \u2014 turned search from a barrier into a conversation.',
@@ -304,17 +303,10 @@ export const PROJECTS = [
         { label: 'Platform', value: 'Web (Desktop + Mobile)' },
         { label: 'Scope', value: 'Programs landing + sub-modules' },
       ],
-      beforeMetrics: [
-        { value: '3+', label: 'disconnected program pages' },
-        { value: 'Low', label: 'visibility of advisory board' },
-        { value: 'Unclear', label: 'certificate verification path' },
-        { value: 'Weak', label: 'hierarchy on mobile' },
-      ],
-      afterMetrics: [
-        { value: '1M+', label: 'students impacted' },
-        { value: '150+', label: 'partner schools' },
-        { value: '390+', label: 'partner colleges' },
-        { value: '12+', label: 'years of expertise showcased' },
+      highlights: [
+        { value: 'IIT & NIT', label: 'partnership-grade credibility' },
+        { value: '3 Tracks', label: 'Workshops · Masterclasses · Internships' },
+        { value: 'Verifiable', label: 'certificate authentication flow' },
       ],
       flows: [
         { index: '01', name: 'Hero & Impact', screens: 'Above the fold', note: 'Clear value prop + quantified reach' },
@@ -334,8 +326,10 @@ export const PROJECTS = [
         'Fully responsive across devices',
       ],
       gallery: [
-        'https://phntechnology.com/assets/img/Handson-project.webp',
-        'https://phntechnology.com/assets/img/Masterclass-img.webp',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/advisoryboard',
+        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/certificate',
       ],
       takeaway:
         'EdTech lives or dies on credibility. Anchoring the page with real numbers, a visible advisory board, and verifiable certificates turned a programs list into a trust-building experience.',
@@ -373,17 +367,10 @@ export const PROJECTS = [
         { label: 'Platform', value: 'Web (Responsive)' },
         { label: 'Scope', value: 'Discovery, Course, Dashboard' },
       ],
-      beforeMetrics: [
-        { value: 'Low', label: 'course completion confidence' },
-        { value: 'High', label: 'drop-off on discovery' },
-        { value: 'Weak', label: 'outcome visibility' },
-        { value: 'No', label: 'trust anchors for new learners' },
-      ],
-      afterMetrics: [
-        { value: '100+', label: 'courses showcased' },
-        { value: '200K', label: 'students reached' },
-        { value: '50+', label: 'expert instructors featured' },
-        { value: '5+', label: 'countries served' },
+      highlights: [
+        { value: 'Outcome-led', label: '"What you\u2019ll achieve" framing' },
+        { value: 'Guided', label: 'domain + skill-level discovery' },
+        { value: 'Trust-first', label: 'IIT / NIT collaboration badges' },
       ],
       flows: [
         { index: '01', name: 'Hero & Intent', screens: 'Landing', note: '"Master the skills that get you hired"' },
@@ -403,8 +390,10 @@ export const PROJECTS = [
         'Responsive, calm, content-first UI',
       ],
       gallery: [
-        'https://lms.phntechnology.com/images/Heroused.png',
-        'https://lms.phntechnology.com/Whatyouwillget.png',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/courses',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/about',
+        'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/contact',
       ],
       takeaway:
         'Learners don\u2019t buy courses \u2014 they buy outcomes. Foregrounding instructors, certificates, and clear "what you\u2019ll achieve" moments made the platform feel less like a catalogue and more like a career partner.',

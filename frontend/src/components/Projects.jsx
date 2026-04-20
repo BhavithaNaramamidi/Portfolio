@@ -58,10 +58,15 @@ const Projects = () => {
         </div>
 
         <div className="mt-14 flex justify-center">
-          <button className="group inline-flex items-center gap-2 rounded-full border border-[var(--ds-border)] px-6 py-3 text-white hover:border-[var(--ds-accent)] hover:text-[var(--ds-accent)] transition-colors">
-            View More Projects
+          <a
+            href="https://www.behance.net/bhavithnaramam"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full border border-[var(--ds-border)] px-6 py-3 text-white hover:border-[var(--ds-accent)] hover:text-[var(--ds-accent)] transition-colors"
+          >
+            See More on Behance
             <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

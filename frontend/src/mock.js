@@ -60,7 +60,7 @@ export const SKILLS = [
 
 export const STATS = [
   { value: '1+', label: 'Years of Experience' },
-  { value: '12+', label: 'Projects Shipped' },
+  { value: '4+', label: 'Projects Shipped' },
   { value: '2', label: 'Months to Head of Design' },
 ];
 
@@ -120,58 +120,176 @@ const DEFAULT_DETAIL = {
 
 export const PROJECTS = [
   {
-    slug: 'edtech-redesign',
-    title: 'EdTech Programs Redesign',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80',
+    slug: 'shopsmart',
+    title: 'ShopSmart — E-Commerce UX',
+    image: 'https://mir-s3-cdn-cf.behance.net/projects/404/3bcb4c247859085.Y3JvcCwxMzA5LDEwMjQsNjQsMA.png',
     description:
-      'Redesigned an educational programs webpage to improve visual hierarchy, clarity, and conversion flow for prospective learners.',
-    tags: ['Web', 'UX Audit', 'Figma'],
-    detail: { ...DEFAULT_DETAIL, client: 'ADM Education NGO', industry: 'EdTech', timeline: '4 Weeks' },
+      'A full UX case study for a modern e-commerce experience — from user research and personas to hi-fidelity prototypes and usability testing for a smarter shopping journey.',
+    tags: ['UX Case Study', 'E-commerce', 'Figma'],
+    detail: {
+      ...DEFAULT_DETAIL,
+      client: 'Self-initiated',
+      industry: 'E-commerce',
+      timeline: '6 Weeks',
+      livePreview: 'https://www.behance.net/gallery/247859085/ShopSmart-E-Commerce-UX-Case-Study',
+      overview: [
+        'ShopSmart is a UX case study reimagining the online shopping flow — from discovery and product comparison to checkout and post-purchase support.',
+        'The focus was on reducing friction at decision moments, building shopper confidence with clearer information, and simplifying the checkout for first-time buyers.',
+      ],
+      role: [
+        'Competitive & Heuristic Analysis',
+        'User Interviews & Personas',
+        'User Journey Mapping',
+        'Wireframes & Interactive Prototypes',
+        'Usability Testing & Iteration',
+        'Hi-fi UI & Micro-interactions',
+      ],
+      features: [
+        'Smart product filters and comparison tool',
+        'Transparent pricing, reviews & trust signals',
+        'Guest checkout with minimal fields',
+        'Wishlist + save-for-later patterns',
+        'Mobile-first responsive layouts',
+        'Empty states that guide shoppers forward',
+        'Accessible colour & typography',
+        'Order tracking & support flow',
+      ],
+      gallery: [
+        'https://mir-s3-cdn-cf.behance.net/projects/404/3bcb4c247859085.Y3JvcCwxMzA5LDEwMjQsNjQsMA.png',
+        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80',
+      ],
+      takeaway:
+        'Shoppers don\u2019t want more choices \u2014 they want clearer ones. Pairing research-led IA with calm visual hierarchy turned a dense catalogue into a confident, focused shopping experience.',
+    },
   },
   {
     slug: 'dwellr',
-    title: 'Dwellr — Roommate Finder',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80',
+    title: 'Dwellr — Roommate Finder App',
+    image: 'https://mir-s3-cdn-cf.behance.net/projects/404/85c532204632283.Y3JvcCwxMzA5LDEwMjQsNjQsMA.png',
     description:
-      'A roommate finder mobile app solving trust & compatibility for shared living — from research, personas, and journeys to hi-fi prototypes.',
-    tags: ['Mobile App', 'Case Study', 'Figma'],
-    detail: { ...DEFAULT_DETAIL, client: 'Self-initiated', industry: 'Social / Housing', timeline: '6 Weeks' },
+      'A roommate finder mobile app solving trust and compatibility challenges in shared living — a full UX journey from research and personas to hi-fi prototypes.',
+    tags: ['Mobile App', 'UX Case Study', 'Figma'],
+    detail: {
+      ...DEFAULT_DETAIL,
+      client: 'Self-initiated',
+      industry: 'Social / Housing',
+      timeline: '6 Weeks',
+      livePreview: 'https://www.behance.net/gallery/204632283/dwellr-A-Roommate-Finder-App-UX-Case-Study',
+      overview: [
+        'Dwellr is a mobile-first roommate finder designed around the real pain points of shared living: trust, compatibility, and information overload in existing apps.',
+        'The design prioritises an honest onboarding flow, compatibility-focused matching, and calm, content-first screens that help users make decisions with confidence.',
+      ],
+      role: [
+        'User Research & Surveys',
+        'Personas & Journey Mapping',
+        'Information Architecture',
+        'Wireframes & User Flows',
+        'High-Fidelity UI in Figma',
+        'Interactive Prototyping',
+      ],
+      features: [
+        'Guided onboarding with lifestyle preferences',
+        'Compatibility-based profile matching',
+        'Verified profile badges for trust',
+        'In-app chat with safety prompts',
+        'Filter by budget, location & habits',
+        'Save & compare shortlisted matches',
+        'Clear privacy controls',
+        'Gentle empty and loading states',
+      ],
+      gallery: [
+        'https://mir-s3-cdn-cf.behance.net/projects/404/85c532204632283.Y3JvcCwxMzA5LDEwMjQsNjQsMA.png',
+        'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80',
+      ],
+      takeaway:
+        'Trust is a design problem. Small cues \u2014 verified badges, honest empty states, calmer colour \u2014 moved Dwellr from "another listings app" to something people felt safe making big decisions on.',
+    },
   },
   {
-    slug: 'finwise',
-    title: 'FinWise — Budget Tracker',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&q=80',
+    slug: 'phn-programs',
+    title: 'PHN Technology — Programs Site',
+    image: 'https://image.thum.io/get/width/1600/https://phntechnology.com/programs',
     description:
-      'A calm personal finance app that turns daily spending into delightful visual insights — built around gentle nudges, not guilt.',
-    tags: ['Mobile App', 'Fintech', 'Prototyping'],
-    detail: { ...DEFAULT_DETAIL, client: 'Concept', industry: 'Fintech', timeline: '3 Weeks' },
+      'Designed the programs landing experience for PHN Technology \u2014 positioning hands-on workshops, expert masterclasses and internships with clean visual hierarchy.',
+    tags: ['Website', 'EdTech', 'Landing Page'],
+    detail: {
+      ...DEFAULT_DETAIL,
+      client: 'PHN Technology',
+      industry: 'EdTech',
+      timeline: '5 Weeks',
+      livePreview: 'https://phntechnology.com/programs',
+      overview: [
+        'PHN Technology partners with IITs and NITs to bring future-ready skills to schools and colleges across India. The Programs page needed to clearly showcase three flagship tracks \u2014 Hands-On Workshops, Expert Masterclasses, and Internship Programs \u2014 to a diverse audience of students, parents and institutions.',
+        'The design direction centred on clarity, credibility and momentum: bold stats, scannable program cards, an advisory board section, and a verifiable-certificate flow that builds instant trust.',
+      ],
+      role: [
+        'Competitive Benchmarking',
+        'Information Architecture',
+        'Landing Page UX & UI',
+        'Program Card System',
+        'Advisory Board Module',
+        'Responsive Design & Handoff',
+      ],
+      features: [
+        'Hero with quantified impact (students, schools, colleges)',
+        'Three-track programs showcase',
+        '"Why Choose Us" value pillars',
+        'CoE Lab & Certification highlight',
+        'Verify-your-certificate flow',
+        'Advisory Board carousel with IIT/NIT directors',
+        'Embedded YouTube story section',
+        'Fully responsive across devices',
+      ],
+      gallery: [
+        'https://phntechnology.com/assets/img/Handson-project.webp',
+        'https://phntechnology.com/assets/img/Masterclass-img.webp',
+      ],
+      takeaway:
+        'EdTech lives or dies on credibility. Anchoring the page with real numbers, a visible advisory board, and verifiable certificates turned a programs list into a trust-building experience.',
+    },
   },
   {
-    slug: 'bloomshop',
-    title: 'BloomShop — E-commerce',
-    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80',
+    slug: 'phn-skillhub-lms',
+    title: 'PHN SkillHub — LMS Platform',
+    image: 'https://image.thum.io/get/width/1600/https://lms.phntechnology.com/',
     description:
-      'A refined storefront for a boutique flower brand — balancing editorial typography with a frictionless checkout experience.',
-    tags: ['Web', 'E-commerce', 'Design System'],
-    detail: { ...DEFAULT_DETAIL, client: 'BloomShop', industry: 'E-commerce', timeline: '5 Weeks' },
-  },
-  {
-    slug: 'pulse-health',
-    title: 'Pulse — Health Dashboard',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80',
-    description:
-      'A clinician-facing dashboard that surfaces the right data at the right time — with accessible colour and clear priority.',
-    tags: ['SaaS', 'Dashboard', 'Accessibility'],
-    detail: { ...DEFAULT_DETAIL, client: 'Pulse Health', industry: 'Healthcare', timeline: '4 Weeks' },
-  },
-  {
-    slug: 'lumenfit',
-    title: 'LumenFit — Workout App',
-    image: 'https://images.unsplash.com/photo-1540496905036-5937c10647cc?w=1600&q=80',
-    description:
-      'An approachable workout companion for beginners — warm visual language, bite-sized sessions, and gentle streaks.',
-    tags: ['Mobile App', 'Branding', 'Motion'],
-    detail: { ...DEFAULT_DETAIL, client: 'LumenFit', industry: 'Health & Wellness', timeline: '4 Weeks' },
+      'End-to-end product design for PHN SkillHub \u2014 a learner-first LMS that helps working professionals build job-ready skills through expert-led, self-paced courses.',
+    tags: ['Web App', 'LMS', 'Product Design'],
+    detail: {
+      ...DEFAULT_DETAIL,
+      client: 'PHN Technology',
+      industry: 'EdTech / LMS',
+      timeline: '8 Weeks',
+      livePreview: 'https://lms.phntechnology.com/',
+      overview: [
+        'PHN SkillHub is a modern LMS for learners looking to pivot or level up their careers. The design had to balance motivation and structure \u2014 so someone juggling a full-time job can still progress meaningfully every week.',
+        'From the hero to course cards, search, and mastery paths, every screen was designed around the learner\u2019s decision moments: "What should I learn?", "Can I commit to this?", and "Am I making real progress?"',
+      ],
+      role: [
+        'Product Strategy & UX Flows',
+        'Course Discovery & Search UX',
+        'Course Card & Detail Design',
+        'Learner Dashboard Concepts',
+        'Visual System & Components',
+        'Figma Dev Hand-off',
+      ],
+      features: [
+        'Domain + skill-level guided search',
+        'Rich course cards with instructor & outcomes',
+        'Project-based learning badges',
+        'Collaboration logos (IITs, NITs) for trust',
+        '"What You Will Achieve" outcome framing',
+        'Mentorship & flexible learning highlights',
+        'Clear login / register entry points',
+        'Responsive, calm, content-first UI',
+      ],
+      gallery: [
+        'https://lms.phntechnology.com/images/Heroused.png',
+        'https://lms.phntechnology.com/Whatyouwillget.png',
+      ],
+      takeaway:
+        'Learners don\u2019t buy courses \u2014 they buy outcomes. Foregrounding instructors, certificates, and clear "what you\u2019ll achieve" moments made the platform feel less like a catalogue and more like a career partner.',
+    },
   },
 ];
 

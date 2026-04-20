@@ -48,54 +48,114 @@ export const STATS = [
   { value: '96+', label: 'Completed Projects' },
 ];
 
+const DEFAULT_DETAIL = {
+  client: 'NovaAI',
+  industry: 'Agency / Portfolio',
+  timeline: '3 Weeks',
+  livePreview: 'https://example.com/preview',
+  overview: [
+    'This project is a fully responsive, performance-optimized web template built from scratch for design and creative agencies. With a sleek layout, smooth animations, and modern UI components, the goal was to deliver a bold online presence that captures attention while remaining user-friendly and flexible.',
+    'Designed with scalability and aesthetics in mind, it helps agencies stand out in the digital landscape through dynamic content sections, a striking hero area, and an interactive case study display.',
+  ],
+  role: [
+    'Full-stack Development',
+    'UI Implementation with Tailwind CSS',
+    'Component-based architecture with React',
+    'Page routing & smooth navigation',
+    'Animation integration (Framer Motion / GSAP)',
+    'Deployment & optimization',
+  ],
+  stack: [
+    { label: 'Frontend', value: 'React.js, Tailwind CSS' },
+    { label: 'Animations', value: 'Framer Motion' },
+    { label: 'Routing', value: 'React Router' },
+    { label: 'Deployment', value: 'Vercel' },
+    { label: 'Others', value: 'GSAP, ScrollReveal, Icon libraries' },
+  ],
+  features: [
+    'Responsive hero section with scroll-based animation',
+    'Interactive project gallery with filter & hover effects',
+    'Modular components for easy reuse (Navbar, Footer, CTA, etc.)',
+    'Case study template layout',
+    'Animated transitions between pages',
+    'Performance-optimized (Lighthouse score: 90+)',
+    'SEO-ready semantic structure',
+    'Custom 404 page',
+  ],
+  challenges: [
+    {
+      challenge: 'Achieving smooth yet lightweight animations',
+      solution:
+        'Integrated Framer Motion for component-level control and fallback with GSAP for scroll sequences',
+    },
+    {
+      challenge: 'Keeping layout pixel-perfect across devices',
+      solution:
+        'Implemented custom breakpoints and used Tailwind\u2019s utility classes smartly',
+    },
+  ],
+  gallery: [
+    'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1600&q=80',
+    'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80',
+  ],
+  takeaway:
+    'This build proves how modern tooling can be made accessible through the right design and storytelling. By combining function and emotion, we shipped an experience that delivers trust, engagement, and results.',
+};
+
 export const PROJECTS = [
   {
     slug: 'techzo',
     title: 'Techzo',
-    image: 'https://images.unsplash.com/photo-1610196600828-517131fddddd?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1610196600828-517131fddddd?w=1600&q=80',
     description:
       'Techzo is a cutting-edge design agency template built to showcase innovation, digital expertise, and a bold creative presence online.',
     tags: ['HTML5 & CSS', 'Framer Motion', 'Vite'],
+    detail: { ...DEFAULT_DETAIL, client: 'NovaAI', industry: 'Agency / Portfolio', timeline: '3 Weeks' },
   },
   {
     slug: 'lumin-studio',
     title: 'Lumin Studio',
-    image: 'https://images.unsplash.com/photo-1615900119312-2acd3a71f3aa?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1615900119312-2acd3a71f3aa?w=1600&q=80',
     description:
       'LuminStudio blends elegance and clarity — a modern design agency template crafted to highlight creative work and impress potential clients.',
     tags: ['HTML5 & Tailwind CSS', 'React', 'Vite'],
+    detail: { ...DEFAULT_DETAIL, client: 'Lumin Co.', industry: 'Design Agency', timeline: '4 Weeks' },
   },
   {
     slug: 'nubuilt',
     title: 'Nubuilt',
-    image: 'https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=1600&q=80',
     description:
       'Crafted with clean, semantic code — Nubuilt is a sleek architecture template built for performance, responsiveness, and timeless design.',
     tags: ['HTML5', 'CSS', 'GSAP'],
+    detail: { ...DEFAULT_DETAIL, client: 'Nubuilt Studio', industry: 'Architecture', timeline: '5 Weeks' },
   },
   {
     slug: 'design-orbit',
     title: 'Design Orbit',
-    image: 'https://images.pexels.com/photos/7038159/pexels-photo-7038159.jpeg?w=1200',
+    image: 'https://images.pexels.com/photos/7038159/pexels-photo-7038159.jpeg?w=1600',
     description:
       'Bold, creative, and conversion-focused — DesignOrbit is a sleek portfolio website template made for design agencies to showcase work.',
     tags: ['HTML5 & CSS', 'GSAP', 'Vite'],
+    detail: { ...DEFAULT_DETAIL, client: 'Orbit Labs', industry: 'Creative Agency', timeline: '3 Weeks' },
   },
   {
     slug: 'formation-time',
     title: 'Formation Time',
-    image: 'https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=1600&q=80',
     description:
       'Professional and polished — FormationTime is a clean consultant website template designed to build trust, highlight services, and convert leads.',
     tags: ['HTML5', 'Tailwind CSS', 'Alpine.js'],
+    detail: { ...DEFAULT_DETAIL, client: 'FormationTime', industry: 'Consulting', timeline: '2 Weeks' },
   },
   {
     slug: 'laundrybee',
     title: 'LaundryBee',
-    image: 'https://images.pexels.com/photos/12269761/pexels-photo-12269761.jpeg?w=1200',
+    image: 'https://images.pexels.com/photos/12269761/pexels-photo-12269761.jpeg?w=1600',
     description:
       'Fresh, fast, and user-friendly — Laundrybee is a clean and modern website template built to promote laundry services and boost online bookings.',
     tags: ['Tailwind CSS', 'Alpine.js', 'Formspree'],
+    detail: { ...DEFAULT_DETAIL, client: 'LaundryBee', industry: 'Services / SaaS', timeline: '3 Weeks' },
   },
 ];
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PROJECTS } from '../mock';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -18,10 +19,9 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {PROJECTS.map((p, i) => (
-            <a
+            <Link
               key={p.slug}
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              to={`/projects/${p.slug}`}
               className="group block"
             >
               <div className="relative overflow-hidden rounded-xl bg-[var(--ds-surface)] border border-[var(--ds-border)] aspect-[4/3]">
@@ -53,7 +53,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

@@ -96,11 +96,57 @@ const ProjectDetail = () => {
       {/* Hero image */}
       <section className="pb-20">
         <div className="ds-container">
-          <div className="relative overflow-hidden rounded-2xl border border-[var(--ds-border)] aspect-[16/9]">
-            <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+          <div className="relative overflow-hidden rounded-2xl border border-[var(--ds-border)] aspect-[16/9] bg-white">
+            <img src={project.image} alt={project.title} className="w-full h-full object-contain" />
           </div>
         </div>
       </section>
+
+      {/* By the Numbers */}
+      {(d.beforeMetrics || d.afterMetrics) && (
+        <section className="pb-20">
+          <div className="ds-container">
+            <div className="ds-mono text-xs text-[var(--ds-accent)] mb-4">// By the Numbers</div>
+            <h2 className="ds-heading text-4xl lg:text-6xl text-white mb-12 max-w-3xl">
+              The <em className="text-[var(--ds-accent)] not-italic">impact</em>, quantified.
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {d.beforeMetrics && (
+                <div className="p-8 rounded-2xl border border-[var(--ds-border)] bg-[var(--ds-surface)]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="w-2 h-2 rounded-full bg-red-400" />
+                    <div className="ds-mono text-[11px] tracking-widest text-[var(--ds-muted)] uppercase">Before — the problem</div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-8">
+                    {d.beforeMetrics.map((m, i) => (
+                      <div key={i}>
+                        <div className="ds-heading text-5xl lg:text-6xl text-white leading-none">{m.value}</div>
+                        <div className="mt-3 text-[13px] text-[var(--ds-muted)] leading-snug">{m.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {d.afterMetrics && (
+                <div className="p-8 rounded-2xl border border-[var(--ds-accent)]/40 bg-[var(--ds-accent)]/[0.04]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="w-2 h-2 rounded-full bg-[var(--ds-accent)]" style={{ animation: 'ds-pulse-dot 2s ease-in-out infinite' }} />
+                    <div className="ds-mono text-[11px] tracking-widest text-[var(--ds-accent)] uppercase">After — the outcome</div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-8">
+                    {d.afterMetrics.map((m, i) => (
+                      <div key={i}>
+                        <div className="ds-heading text-5xl lg:text-6xl text-[var(--ds-accent)] leading-none">{m.value}</div>
+                        <div className="mt-3 text-[13px] text-white/70 leading-snug">{m.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Content sections */}
       <section className="pb-20">
@@ -108,7 +154,7 @@ const ProjectDetail = () => {
           <aside className="col-span-12 lg:col-span-3">
             <div className="sticky top-28 space-y-3 ds-mono text-xs text-[var(--ds-muted)]">
               <div className="text-[var(--ds-accent)]">// On this page</div>
-              {['Overview', 'Your Role', 'Tech Stack', 'Key Features', 'Challenges', 'Takeaways'].map((s) => (
+              {['Overview', 'By the Numbers', 'Your Role', 'Flows', 'Tech Stack', 'Key Features', 'Challenges', 'Takeaways'].map((s) => (
                 <div key={s} className="text-white/70 hover:text-[var(--ds-accent)] transition-colors cursor-pointer">
                   {s}
                 </div>
@@ -137,6 +183,30 @@ const ProjectDetail = () => {
                 ))}
               </ul>
             </div>
+
+            {d.flows && d.flows.length > 0 && (
+              <div>
+                <SectionHeading>Flows &amp; Structure</SectionHeading>
+                <div className="divide-y divide-[var(--ds-border)] border-y border-[var(--ds-border)]">
+                  {d.flows.map((f) => (
+                    <div key={f.index} className="py-5 grid grid-cols-12 gap-4 items-start">
+                      <div className="col-span-2 sm:col-span-1">
+                        <span className="ds-mono text-xs text-[var(--ds-accent)]">{f.index}</span>
+                      </div>
+                      <div className="col-span-10 sm:col-span-4">
+                        <div className="ds-heading text-xl text-white">{f.name}</div>
+                      </div>
+                      <div className="col-span-12 sm:col-span-3 ds-mono text-[12px] text-[var(--ds-muted)]">
+                        {f.screens}
+                      </div>
+                      <div className="col-span-12 sm:col-span-4 text-[14px] text-white/70">
+                        {f.note}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div>
               <SectionHeading>Tech Stack Used</SectionHeading>

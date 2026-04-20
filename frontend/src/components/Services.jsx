@@ -11,7 +11,7 @@ const Services = () => {
           <div>
             <div className="ds-mono text-xs text-[var(--ds-accent)] mb-4">// Service</div>
             <h2 className="ds-heading text-5xl lg:text-7xl text-white max-w-3xl">
-              End-to-End Web <em className="text-[var(--ds-accent)] not-italic">Development</em> Services
+              End-to-End Product <em className="text-[var(--ds-accent)] not-italic">Design</em> Services
             </h2>
           </div>
           <div className="ds-mono text-xl text-[var(--ds-muted)]">&lt;/&gt;</div>

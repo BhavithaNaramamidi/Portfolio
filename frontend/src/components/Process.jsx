@@ -9,7 +9,7 @@ const Process = () => {
           <div>
             <div className="ds-mono text-xs text-[var(--ds-accent)] mb-4">// Process</div>
             <h2 className="ds-heading text-5xl lg:text-7xl text-white max-w-3xl">
-              My Development <em className="text-[var(--ds-accent)] not-italic">work</em> Process
+              My Design <em className="text-[var(--ds-accent)] not-italic">work</em> Process
             </h2>
           </div>
           <div className="ds-mono text-xl text-[var(--ds-muted)]">&lt;/&gt;</div>

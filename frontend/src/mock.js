@@ -9,7 +9,6 @@ export const NAV_LINKS = [
   { label: 'Projects', to: '#projects' },
   { label: 'Services', to: '#services' },
   { label: 'Process', to: '#process' },
-  { label: 'Blog', to: '#blog' },
   { label: 'Contact', to: '#contact' },
 ];
 

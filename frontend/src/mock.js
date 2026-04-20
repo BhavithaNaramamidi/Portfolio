@@ -327,11 +327,8 @@ export const PROJECTS = [
       ],
       gallery: [
         'https://image.thum.io/get/width/1600/https://phntechnology.com/programs',
-        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/masterclass',
         'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/internship/business-analytics',
         'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/summer-internship/offline',
-        'https://image.thum.io/get/width/1600/https://phntechnology.com/advisoryboard',
-        'https://image.thum.io/get/width/1600/https://phntechnology.com/programs/certificate',
       ],
       takeaway:
         'EdTech lives or dies on credibility. Anchoring the page with real numbers, a visible advisory board, and verifiable certificates turned a programs list into a trust-building experience.',

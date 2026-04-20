@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Menu as MenuIcon, X } from 'lucide-react';
+import { Menu as MenuIcon, X, FileText } from 'lucide-react';
 import { NAV_LINKS } from '../mock';
+import { useResume } from '../context/ResumeContext';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { open: openResume } = useResume();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -34,7 +36,7 @@ const Header = () => {
             onClick={() => go('/')}
             className="ds-mono tracking-[0.22em] text-[13px] text-white/90 hover:text-[var(--ds-accent)] transition-colors"
           >
-            BRUNO SIMON
+            BHAVITHA
           </button>
 
           <button
@@ -89,10 +91,19 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <div className="mt-10">
+              <button
+                onClick={() => { setOpen(false); setTimeout(openResume, 300); }}
+                className="group inline-flex items-center gap-3 rounded-full bg-[var(--ds-accent)] text-black px-5 py-3 font-medium hover:bg-[var(--ds-accent-2)] transition-colors"
+              >
+                <FileText size={15} />
+                View Resume
+              </button>
+            </div>
           </nav>
           <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between ds-mono text-xs text-[var(--ds-muted)]">
-            <span>info@brunosimon.com</span>
-            <span>2025 © Devsync</span>
+            <span>nbhavitha04@gmail.com</span>
+            <span>2026 © Bhavitha</span>
           </div>
         </div>
       </div>

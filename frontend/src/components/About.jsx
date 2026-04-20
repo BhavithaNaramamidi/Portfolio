@@ -1,8 +1,10 @@
 import React from 'react';
 import { ABOUT, SKILLS, STATS } from '../mock';
-import { Code2, ArrowUpRight } from 'lucide-react';
+import { Palette, ArrowUpRight } from 'lucide-react';
+import { useResume } from '../context/ResumeContext';
 
 const About = () => {
+  const { open } = useResume();
   return (
     <section id="about" className="relative py-24 lg:py-32">
       <div className="ds-container">
@@ -36,7 +38,7 @@ const About = () => {
                 <div key={s.category} className="border-b border-[var(--ds-border)] py-5">
                   <div className="flex items-center justify-between mb-3">
                     <h4 className="text-white text-base font-medium">{s.category}</h4>
-                    <Code2 size={16} className="text-[var(--ds-muted)]" />
+                    <Palette size={16} className="text-[var(--ds-muted)]" />
                   </div>
                   <div className="flex flex-wrap gap-x-6 gap-y-2">
                     {s.items.map((it) => (
@@ -53,8 +55,8 @@ const About = () => {
               {ABOUT.bio}
             </p>
 
-            <button className="mt-8 group inline-flex items-center gap-2 rounded-full bg-[var(--ds-accent)] text-black px-6 py-3 font-medium hover:bg-[var(--ds-accent-2)] transition-colors">
-              My Resume
+            <button onClick={open} className="mt-8 group inline-flex items-center gap-2 rounded-full bg-[var(--ds-accent)] text-black px-6 py-3 font-medium hover:bg-[var(--ds-accent-2)] transition-colors">
+              View Resume
               <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
           </div>

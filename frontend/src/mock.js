@@ -1,4 +1,7 @@
-// Mock data for Devsync clone
+// Mock data for Bhavitha Naramamidi - Product Designer Portfolio
+
+export const RESUME_URL =
+  'https://customer-assets.emergentagent.com/job_dev-workspace-199/artifacts/xauc6eqk_Naramamidi_Bhavitha_UI_UX_Designer_Resume.pdf';
 
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
@@ -11,254 +14,268 @@ export const NAV_LINKS = [
 ];
 
 export const HERO = {
-  greeting: "Hey,",
-  wave: "👋",
-  role: "I'm a Full Stack Developer",
-  name: 'BrunoSimon',
+  greeting: 'Hey,',
+  wave: '👋',
+  role: "I'm a Product Designer",
+  name: 'Bhavitha',
+  fullName: 'Bhavitha Naramamidi',
   description:
-    'I craft fast, scalable, and user-friendly web applications with modern JavaScript frameworks — combining React on the frontend with robust server-side solutions using Node.js.',
-  image: 'https://images.pexels.com/photos/19805878/pexels-photo-19805878.jpeg',
+    'I craft intuitive, accessible, and user-centered digital experiences — blending thoughtful UX research with refined UI craft to solve real-world problems that feel effortless to use.',
+  image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80',
 };
 
 export const CONTACT = {
-  email: 'info@brunosimon.com',
-  phone: '+39 03 463 853 02',
+  email: 'nbhavitha04@gmail.com',
+  phone: '+91 91215 44119',
   socials: [
-    { label: 'Twitter(X)', url: 'https://twitter.com/' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/' },
-    { label: 'GitHub', url: 'https://github.com/' },
-    { label: 'CodePen', url: 'https://codepen.io/' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/bhavitha-naramamidi-041979297?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+    { label: 'Behance', url: 'https://www.behance.net/bhavithnaramam' },
+    { label: 'Dribbble', url: 'https://dribbble.com/' },
+    { label: 'Figma', url: 'https://www.figma.com/' },
   ],
 };
 
 export const ABOUT = {
-  portrait: 'https://images.unsplash.com/photo-1581913229425-9c6b993fc107?w=900&q=80',
-  bio: "I thrive on solving real-world problems, turning ideas into clean, maintainable code, and learning through experimentation. You'll find me building side projects, diving into new tech stacks, or simply exploring what's next in the world of web development.",
+  portrait: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900&q=80',
+  bio: "I'm passionate about designing products that are both beautiful and genuinely useful. As a UI/UX designer — promoted to Head of Design at ADM Education & Society Welfare NGO within two months — I thrive on user research, wireframing, and turning complex problems into simple, delightful experiences. Always exploring new patterns, iterating with feedback, and learning something new.",
 };
 
 export const SKILLS = [
-  { category: 'Frontend', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'] },
-  { category: 'Server-side development', items: ['Node.js', 'Express.js', 'MongoDB', 'PHP', 'Laravel'] },
-  { category: 'Tools', items: ['Git', 'Github', 'Stack Overflow', 'AWS', 'Docker'] },
+  {
+    category: 'UX Design',
+    items: ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Information Architecture', 'User Journeys'],
+  },
+  {
+    category: 'UI Design',
+    items: ['Visual Design', 'Typography', 'Layout Design', 'Responsive Design', 'Design Systems', 'Interaction Design'],
+  },
+  {
+    category: 'Tools',
+    items: ['Figma', 'FigJam', 'Adobe XD', 'Canva', 'Notion', 'Miro', 'Framer'],
+  },
+  {
+    category: 'Core Strengths',
+    items: ['Problem Solving', 'Communication', 'Collaboration', 'Leadership', 'Empathy', 'Critical Thinking', 'Attention to Detail', 'Storytelling', 'Adaptability', 'Time Management'],
+  },
 ];
 
 export const STATS = [
-  { value: '6+', label: 'Years in Experience' },
-  { value: '16+', label: 'Clients Worldwide' },
-  { value: '96+', label: 'Completed Projects' },
+  { value: '1+', label: 'Years of Experience' },
+  { value: '12+', label: 'Projects Shipped' },
+  { value: '2', label: 'Months to Head of Design' },
 ];
 
 const DEFAULT_DETAIL = {
-  client: 'NovaAI',
-  industry: 'Agency / Portfolio',
+  client: 'Private Client',
+  industry: 'Product / SaaS',
   timeline: '3 Weeks',
-  livePreview: 'https://example.com/preview',
+  livePreview: 'https://www.behance.net/bhavithnaramam',
   overview: [
-    'This project is a fully responsive, performance-optimized web template built from scratch for design and creative agencies. With a sleek layout, smooth animations, and modern UI components, the goal was to deliver a bold online presence that captures attention while remaining user-friendly and flexible.',
-    'Designed with scalability and aesthetics in mind, it helps agencies stand out in the digital landscape through dynamic content sections, a striking hero area, and an interactive case study display.',
+    'A user-centered design project focused on solving real usability challenges through careful research, iteration, and refined visual craft.',
+    'Every decision was informed by user interviews and testing — from information architecture down to the smallest micro-interaction.',
   ],
   role: [
-    'Full-stack Development',
-    'UI Implementation with Tailwind CSS',
-    'Component-based architecture with React',
-    'Page routing & smooth navigation',
-    'Animation integration (Framer Motion / GSAP)',
-    'Deployment & optimization',
+    'User Research & Interviews',
+    'Information Architecture',
+    'Wireframing & User Flows',
+    'Hi-fidelity UI Design',
+    'Prototyping & Usability Testing',
+    'Design System Setup',
   ],
   stack: [
-    { label: 'Frontend', value: 'React.js, Tailwind CSS' },
-    { label: 'Animations', value: 'Framer Motion' },
-    { label: 'Routing', value: 'React Router' },
-    { label: 'Deployment', value: 'Vercel' },
-    { label: 'Others', value: 'GSAP, ScrollReveal, Icon libraries' },
+    { label: 'Design', value: 'Figma, FigJam' },
+    { label: 'Prototyping', value: 'Figma, Framer' },
+    { label: 'Research', value: 'Notion, Miro, Google Forms' },
+    { label: 'Handoff', value: 'Figma Dev Mode' },
+    { label: 'Visuals', value: 'Illustrator, Canva' },
   ],
   features: [
-    'Responsive hero section with scroll-based animation',
-    'Interactive project gallery with filter & hover effects',
-    'Modular components for easy reuse (Navbar, Footer, CTA, etc.)',
-    'Case study template layout',
-    'Animated transitions between pages',
-    'Performance-optimized (Lighthouse score: 90+)',
-    'SEO-ready semantic structure',
-    'Custom 404 page',
+    'Responsive layouts across mobile and desktop',
+    'Accessible colour palettes (WCAG AA)',
+    'Reusable component library',
+    'Clear visual hierarchy and grid system',
+    'Micro-interactions & motion principles',
+    'User-tested onboarding flow',
+    'Scalable design tokens',
+    'Dev-ready Figma handoff',
   ],
   challenges: [
     {
-      challenge: 'Achieving smooth yet lightweight animations',
+      challenge: 'Balancing clarity with a rich amount of content',
       solution:
-        'Integrated Framer Motion for component-level control and fallback with GSAP for scroll sequences',
+        'Introduced a layered IA with progressive disclosure so users could scan quickly and dive deeper only when needed.',
     },
     {
-      challenge: 'Keeping layout pixel-perfect across devices',
+      challenge: 'Building trust in a new product category',
       solution:
-        'Implemented custom breakpoints and used Tailwind\u2019s utility classes smartly',
+        'Added social proof, transparency moments, and a friendly tone-of-voice across empty states and CTAs.',
     },
   ],
   gallery: [
-    'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1600&q=80',
-    'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80',
+    'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1600&q=80',
+    'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1600&q=80',
   ],
   takeaway:
-    'This build proves how modern tooling can be made accessible through the right design and storytelling. By combining function and emotion, we shipped an experience that delivers trust, engagement, and results.',
+    "This project reaffirmed that great design is a conversation — between the user's needs, the business goals, and the craft. Small details, tested early, compound into experiences people love.",
 };
 
 export const PROJECTS = [
   {
-    slug: 'techzo',
-    title: 'Techzo',
-    image: 'https://images.unsplash.com/photo-1610196600828-517131fddddd?w=1600&q=80',
+    slug: 'edtech-redesign',
+    title: 'EdTech Programs Redesign',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80',
     description:
-      'Techzo is a cutting-edge design agency template built to showcase innovation, digital expertise, and a bold creative presence online.',
-    tags: ['HTML5 & CSS', 'Framer Motion', 'Vite'],
-    detail: { ...DEFAULT_DETAIL, client: 'NovaAI', industry: 'Agency / Portfolio', timeline: '3 Weeks' },
+      'Redesigned an educational programs webpage to improve visual hierarchy, clarity, and conversion flow for prospective learners.',
+    tags: ['Web', 'UX Audit', 'Figma'],
+    detail: { ...DEFAULT_DETAIL, client: 'ADM Education NGO', industry: 'EdTech', timeline: '4 Weeks' },
   },
   {
-    slug: 'lumin-studio',
-    title: 'Lumin Studio',
-    image: 'https://images.unsplash.com/photo-1615900119312-2acd3a71f3aa?w=1600&q=80',
+    slug: 'dwellr',
+    title: 'Dwellr — Roommate Finder',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80',
     description:
-      'LuminStudio blends elegance and clarity — a modern design agency template crafted to highlight creative work and impress potential clients.',
-    tags: ['HTML5 & Tailwind CSS', 'React', 'Vite'],
-    detail: { ...DEFAULT_DETAIL, client: 'Lumin Co.', industry: 'Design Agency', timeline: '4 Weeks' },
+      'A roommate finder mobile app solving trust & compatibility for shared living — from research, personas, and journeys to hi-fi prototypes.',
+    tags: ['Mobile App', 'Case Study', 'Figma'],
+    detail: { ...DEFAULT_DETAIL, client: 'Self-initiated', industry: 'Social / Housing', timeline: '6 Weeks' },
   },
   {
-    slug: 'nubuilt',
-    title: 'Nubuilt',
-    image: 'https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=1600&q=80',
+    slug: 'finwise',
+    title: 'FinWise — Budget Tracker',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&q=80',
     description:
-      'Crafted with clean, semantic code — Nubuilt is a sleek architecture template built for performance, responsiveness, and timeless design.',
-    tags: ['HTML5', 'CSS', 'GSAP'],
-    detail: { ...DEFAULT_DETAIL, client: 'Nubuilt Studio', industry: 'Architecture', timeline: '5 Weeks' },
+      'A calm personal finance app that turns daily spending into delightful visual insights — built around gentle nudges, not guilt.',
+    tags: ['Mobile App', 'Fintech', 'Prototyping'],
+    detail: { ...DEFAULT_DETAIL, client: 'Concept', industry: 'Fintech', timeline: '3 Weeks' },
   },
   {
-    slug: 'design-orbit',
-    title: 'Design Orbit',
-    image: 'https://images.pexels.com/photos/7038159/pexels-photo-7038159.jpeg?w=1600',
+    slug: 'bloomshop',
+    title: 'BloomShop — E-commerce',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80',
     description:
-      'Bold, creative, and conversion-focused — DesignOrbit is a sleek portfolio website template made for design agencies to showcase work.',
-    tags: ['HTML5 & CSS', 'GSAP', 'Vite'],
-    detail: { ...DEFAULT_DETAIL, client: 'Orbit Labs', industry: 'Creative Agency', timeline: '3 Weeks' },
+      'A refined storefront for a boutique flower brand — balancing editorial typography with a frictionless checkout experience.',
+    tags: ['Web', 'E-commerce', 'Design System'],
+    detail: { ...DEFAULT_DETAIL, client: 'BloomShop', industry: 'E-commerce', timeline: '5 Weeks' },
   },
   {
-    slug: 'formation-time',
-    title: 'Formation Time',
-    image: 'https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=1600&q=80',
+    slug: 'pulse-health',
+    title: 'Pulse — Health Dashboard',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80',
     description:
-      'Professional and polished — FormationTime is a clean consultant website template designed to build trust, highlight services, and convert leads.',
-    tags: ['HTML5', 'Tailwind CSS', 'Alpine.js'],
-    detail: { ...DEFAULT_DETAIL, client: 'FormationTime', industry: 'Consulting', timeline: '2 Weeks' },
+      'A clinician-facing dashboard that surfaces the right data at the right time — with accessible colour and clear priority.',
+    tags: ['SaaS', 'Dashboard', 'Accessibility'],
+    detail: { ...DEFAULT_DETAIL, client: 'Pulse Health', industry: 'Healthcare', timeline: '4 Weeks' },
   },
   {
-    slug: 'laundrybee',
-    title: 'LaundryBee',
-    image: 'https://images.pexels.com/photos/12269761/pexels-photo-12269761.jpeg?w=1600',
+    slug: 'lumenfit',
+    title: 'LumenFit — Workout App',
+    image: 'https://images.unsplash.com/photo-1540496905036-5937c10647cc?w=1600&q=80',
     description:
-      'Fresh, fast, and user-friendly — Laundrybee is a clean and modern website template built to promote laundry services and boost online bookings.',
-    tags: ['Tailwind CSS', 'Alpine.js', 'Formspree'],
-    detail: { ...DEFAULT_DETAIL, client: 'LaundryBee', industry: 'Services / SaaS', timeline: '3 Weeks' },
+      'An approachable workout companion for beginners — warm visual language, bite-sized sessions, and gentle streaks.',
+    tags: ['Mobile App', 'Branding', 'Motion'],
+    detail: { ...DEFAULT_DETAIL, client: 'LumenFit', industry: 'Health & Wellness', timeline: '4 Weeks' },
   },
 ];
 
 export const SERVICES = [
   {
     index: '01',
-    title: 'Custom Web Development',
+    title: 'UX Research & Strategy',
     description:
-      'Build complete web applications from scratch — frontend to backend — optimized for speed, security, and scalability.',
-    image: 'https://images.unsplash.com/photo-1732209556859-72cfe81ae9ab?w=800&q=80',
+      'Interviews, surveys, and competitive audits that turn fuzzy problems into clear product opportunities.',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=80',
   },
   {
     index: '02',
-    title: 'Frontend Engineering',
+    title: 'Wireframing & Prototyping',
     description:
-      'Pixel-perfect interfaces with modern frameworks, focused on accessibility, performance, and delightful motion design.',
-    image: 'https://images.unsplash.com/photo-1713947503813-da5351679a0c?w=800&q=80',
+      'From low-fi sketches to interactive Figma prototypes — testing ideas fast before a pixel is polished.',
+    image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1000&q=80',
   },
   {
     index: '03',
-    title: 'Server logic & API Development',
+    title: 'Visual & UI Design',
     description:
-      'Scalable APIs, robust data models, and secure auth — built with Node.js, Express, and MongoDB.',
-    image: 'https://images.pexels.com/photos/12899156/pexels-photo-12899156.jpeg?w=800',
+      'Thoughtful typography, colour, and layout — delivering interfaces that feel refined, consistent, and on-brand.',
+    image: 'https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=1000&q=80',
   },
   {
     index: '04',
-    title: 'Full Stack Application Development',
+    title: 'Design Systems',
     description:
-      'End-to-end product engineering — from requirements to deployment with CI/CD and cloud infrastructure.',
-    image: 'https://images.unsplash.com/photo-1581913229425-9c6b993fc107?w=800&q=80',
+      'Scalable component libraries with tokens and clear documentation — so teams ship faster without losing consistency.',
+    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1000&q=80',
   },
 ];
 
 export const PROCESS = [
   {
     index: '01',
-    title: 'Plan & Architect',
+    title: 'Discover & Research',
     description:
-      'Before writing a single line of code, I dive deep into understanding the project goals, user needs, and technical constraints.',
+      'Stakeholder chats, user interviews, and desk research to deeply understand the real problem before touching pixels.',
   },
   {
     index: '02',
-    title: 'Build & Develop',
+    title: 'Design & Prototype',
     description:
-      'Build pixel-perfect user interfaces and robust backend systems in parallel. I ensure that every component — UI or API — is maintainable.',
+      'From rough wireframes to polished hi-fi prototypes — iterating quickly with the team and pressure-testing the flows.',
   },
   {
     index: '03',
-    title: 'Launch & Support',
+    title: 'Test & Iterate',
     description:
-      'I also provide post-launch monitoring, performance optimization, and ongoing iteration support to keep your product growing.',
+      'Usability tests, feedback loops, and handoff with clear documentation — then measuring impact and refining further.',
   },
 ];
 
 export const TESTIMONIALS = [
   {
     quote:
-      'Bruno immediately understood our product goals and translated them into a beautifully optimized web experience. His technical expertise and collaborative spirit made a complex project feel effortless.',
-    name: 'Carlos Méndez',
-    title: 'Co-Founder of Launchly',
+      'Bhavitha has an incredible eye for clarity. She took our dense programs page and turned it into something calm, scannable, and genuinely delightful to use. Promoted her to Head of Design in two months — completely earned.',
+    name: 'Program Director',
+    title: 'ADM Education & Society Welfare NGO',
     avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=240&q=80',
   },
   {
     quote:
-      'Working with Bruno was a game-changer for our e-commerce revamp. He not only delivered scalable, high-quality code but also brought clarity and structure to the entire process. Communication was seamless from start to finish.',
+      'What stood out was how much she cared about the actual humans using our product. Her research insights reshaped our onboarding entirely — and it showed up in the numbers.',
     name: 'Sophie Lin',
     title: 'Head of Product, Drift & Bloom',
     avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=240&q=80',
   },
   {
     quote:
-      'Working with Bruno Simon was one of the best decisions we made for our web platform. He understood our vision, delivered clean & scalable code, and communicated clearly throughout the project.',
+      'Bhavitha blends sharp visual craft with a really structured design process. Handoff was effortless — tokens, states, documentation — all thoughtfully ready for engineering.',
     name: 'Ronald Richards',
-    title: 'CEO, BankTech Inc.',
+    title: 'Engineering Lead, PulseTech',
     avatar: 'https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?w=240&q=80',
   },
 ];
 
 export const CLIENTS = [
-  'Acme', 'Nova', 'Vertex', 'Pulse', 'Orbit', 'Zenith', 'Lumen', 'Forge',
+  'ADM NGO', 'Dwellr', 'FinWise', 'BloomShop', 'Pulse', 'LumenFit', 'Orbit', 'Lumen',
 ];
 
 export const BLOGS = [
   {
-    slug: 'frontend-vs-backend',
-    image: 'https://images.pexels.com/photos/12899156/pexels-photo-12899156.jpeg?w=900',
-    category: 'React JS',
-    date: 'Dec 12, 2025',
-    title: 'Frontend vs. Backend: Which Path Should You Choose?',
+    slug: 'wireframing-that-works',
+    image: 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=900&q=80',
+    category: 'UX',
+    date: 'Feb 14, 2026',
+    title: 'Wireframing That Actually Helps You Ship Faster',
   },
   {
-    slug: 'seo-for-developers',
-    image: 'https://images.pexels.com/photos/19805878/pexels-photo-19805878.jpeg?w=900',
-    category: 'Development',
-    date: 'Dec 27, 2025',
-    title: '11 SEO for Developers: Optimizing Websites for Better Rankings',
+    slug: 'design-systems-101',
+    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900&q=80',
+    category: 'Design Systems',
+    date: 'Jan 28, 2026',
+    title: 'Design Systems 101: Tokens, Components & Docs',
   },
   {
-    slug: 'remote-workflow',
-    image: 'https://images.unsplash.com/photo-1713947503813-da5351679a0c?w=900&q=80',
-    category: 'Freelancing',
-    date: 'May 31, 2025',
-    title: 'Working Remotely as a Full Stack Developer: My Workflow & Tools',
+    slug: 'research-for-solo-designers',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80',
+    category: 'Research',
+    date: 'Jan 10, 2026',
+    title: 'User Research When You\u2019re a One-Person Design Team',
   },
 ];

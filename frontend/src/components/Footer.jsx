@@ -93,10 +93,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-4 ds-mono text-[11px] text-[var(--ds-muted)]">
-          <div>© 2025 Devsync. Designed for developers.</div>
+          <div>© 2026 Bhavitha Naramamidi. Designed with care.</div>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[var(--ds-accent)]" style={{ animation: 'ds-pulse-dot 2s ease-in-out infinite' }} />
-            Available for freelance work
+            Available for freelance & full-time roles
           </div>
         </div>
       </div>
